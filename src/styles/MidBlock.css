@@ -1,0 +1,5 @@
+.mid-block-main {
+  background-color: yellow;
+  width: 100%;
+  height: calc(100% - (150px));
+}
