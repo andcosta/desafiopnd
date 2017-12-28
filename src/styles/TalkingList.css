@@ -1,0 +1,41 @@
+.msg-out {
+  margin: 0;
+}
+
+.all-line {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.human-msg {
+  height: auto;
+  float: left;
+  width: auto;
+  margin-top: 15px;
+  margin-left: 15px;
+  max-width: 250px;
+  border-radius: 5px;
+  color: white;
+  background-color: #3d80a5;
+  padding: 20px;
+}
+
+.robot-msg {
+  height: auto;
+  float: right;
+  width: auto;
+  margin-top: 15px;
+  margin-right: 15px;
+  max-width: 250px;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+  padding: 20px;
+}
+
+.all-parent-style {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
