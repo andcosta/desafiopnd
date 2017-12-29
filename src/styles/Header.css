@@ -31,11 +31,20 @@
   margin-top: 5px;
 }
 
-.robot-name {
-  float: left;
+.name {
   margin-top: 0px;
-  margin-left: 10px;
   line-height: 50px;
   font-size: 20px;
   color: white;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+.left {
+  margin-left: 10px;
+  float: left;
+}
+
+.right {
+  float: right;
+  margin-right: 10px;
 }

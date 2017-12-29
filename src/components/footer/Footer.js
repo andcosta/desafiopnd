@@ -1,14 +1,26 @@
 import '../../styles/Footer.css';
 import manuh from 'manuh';
 import React, { Component } from 'react';
+import Robot from '../../robot/Robot';
 
 class Footer extends Component {
   constructor(props) {
     super(props);
+    this.robot = new Robot();
     this.state = {
       msg: '',
       cont: 0
     };
+  }
+
+  talking() {
+    this.sendMessage();
+    this.replyFromRobot();
+    this.cleanMessage();
+  }
+
+  cleanMessage() {
+    this.setState({ msg: '' });
   }
 
   sendMessage() {
@@ -17,38 +29,47 @@ class Footer extends Component {
       sender: 'human',
       key: this.state.cont
     });
+    this.incrementMessageId();
+  }
 
+  replyFromRobot() {
+    this.robot.sendMessage(this.state.cont);
+    this.incrementMessageId();
+  }
+
+  incrementMessageId() {
     this.state.cont++;
-
-    manuh.publish('msg/send', {
-      value: 'Olá , estou ouvindo, em que posso ajudá-lo?',
-      sender: 'robot',
-      key: this.state.cont
-    });
-
-    this.setState({ cont: this.state.cont + 1, msg: '' });
   }
 
   render() {
     return (
       <div className="main-footer">
-        <textarea
-          className="text-area"
-          placeholder="Digite aqui sua mensagem..."
-          value={this.state.msg}
-          onChange={newValue => {
-            this.setState({ msg: newValue.target.value });
-          }}
-          onKeyPress={event => {
-            if (event.key === 'Enter') this.sendMessage();
-          }}
-        />
-        <input
-          className="send-button button-start "
-          type="submit"
-          value="Enviar"
-          onClick={() => this.sendMessage()}
-        />
+        <div className="cointaner-text-area">
+          <textarea
+            className="text-area"
+            placeholder="Digite aqui sua mensagem..."
+            value={this.state.msg}
+            onChange={newValue => {
+              this.setState({ msg: newValue.target.value });
+            }}
+            onKeyPress={event => {
+              if (event.key === 'Enter' && this.state.msg.trim() !== '')
+                this.talking();
+            }}
+          />
+          <input
+            className={
+              this.state.msg.trim() !== ''
+                ? 'button-start send-button send-avaiable'
+                : 'button-start send-button send-disable'
+            }
+            type="submit"
+            value="Enviar"
+            onClick={() => {
+              if (this.state.msg.trim() !== '') this.talking();
+            }}
+          />
+        </div>
       </div>
     );
   }

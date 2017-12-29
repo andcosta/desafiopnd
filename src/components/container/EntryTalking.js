@@ -1,6 +1,7 @@
 import '../../styles/Container.css';
 import pnd from '../../images/pdvendas.png';
 import React, { Component } from 'react';
+import manuh from 'manuh';
 
 class EntryTalking extends Component {
   constructor(props) {
@@ -10,13 +11,17 @@ class EntryTalking extends Component {
     };
   }
 
+  startChat() {
+    this.props.startChat(this.state.name);
+  }
+
   render() {
     return (
       <div className="entry-div">
         <img src={pnd} alt="logo" className="logo-pnd" />
         <div className="middle-div">
           <div className="login-dom">
-            <p className="login-text"> Login </p>
+            <p className="login-text"> Chat </p>
           </div>
           <div className="login-dom with-margin">
             <input
@@ -24,7 +29,8 @@ class EntryTalking extends Component {
               type="text"
               placeholder="Insira seu nome..."
               onChange={event => {
-                this.setState({ name: event.target.value });
+                this.props.onChangeName(event.target.value.trim());
+                this.setState({ name: event.target.value.trim() });
               }}
             />
             <input
@@ -39,7 +45,7 @@ class EntryTalking extends Component {
                 this.state.name !== '' ? 'button-start' : 'button-disabled'
               }
               onClick={() => {
-                if (this.state.name !== '') this.props.startChat();
+                if (this.state.name !== '') this.startChat();
               }}
             />
           </div>

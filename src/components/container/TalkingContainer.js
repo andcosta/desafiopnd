@@ -5,10 +5,13 @@ import MidBlock from '../midBlock/MidBlock';
 import Footer from '../footer/Footer';
 
 class TalkingContainer extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div className="entry">
-        <Header />
+        <Header getNameUser={this.props.getNameUser} />
         <MidBlock />
         <Footer />
       </div>

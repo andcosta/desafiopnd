@@ -9,7 +9,8 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      talkingActive: false
+      talkingActive: false,
+      user: ''
     };
   }
 
@@ -17,12 +18,25 @@ class Home extends Component {
     this.setState({ talkingActive: true });
   }
 
+  onChangeName(name) {
+    this.setState({ user: name });
+  }
+
+  getUserName() {
+    return this.state.user;
+  }
+
   render() {
     return (
       <div className="App">
-        {this.state.talkingActive === true && <TalkingContainer />}
+        {this.state.talkingActive === true && (
+          <TalkingContainer getNameUser={this.getUserName.bind(this)} />
+        )}
         {this.state.talkingActive === false && (
-          <EntryTalking startChat={this.startChat.bind(this)} />
+          <EntryTalking
+            startChat={this.startChat.bind(this)}
+            onChangeName={name => this.onChangeName(name)}
+          />
         )}
       </div>
     );

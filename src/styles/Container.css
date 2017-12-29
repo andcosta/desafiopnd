@@ -36,6 +36,7 @@
   font-weight: bold;
   font-family: 'Arial';
   margin-top: 50px;
+  text-align: center;
 }
 
 input[type='text'] {
