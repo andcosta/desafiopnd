@@ -35,6 +35,8 @@ Algumas ações do npm estão configuradas no package.json. Uma delas é 'npm st
 
 na pasta root do seu app e sua aplicação estará rodando no enderço 'localhost:3000'.
 
+PS : Não esqueça de utilizar o comando npm install quando clonar o projeto para baixar as dependências do mesmo.
+
 ## Como testar
 
 Para testar , utilize o comando :
@@ -42,8 +44,6 @@ Para testar , utilize o comando :
 * 'npm test'
 
 No package.json, o script 'test' foi configurado para chamar o mocha, e assim rodar o script de teste, que testa a integridade dos objetos utilizados no app.
-
-PS : Não esqueça de utilizar o comando npm install quando clonar o projeto para baixar as dependências do mesmo.
 
 ## Itens da avaliação
 
