@@ -9,8 +9,8 @@ const Message = Messages[0];
 
 describe('Testing the robot answers', () => {
   it('Testing if is returning a corret answer. ', () => {
-    expect(answer).to.be.a('string');
     expect(answer).to.not.be.empty;
+    expect(answer).to.be.a('string');
   });
 });
 

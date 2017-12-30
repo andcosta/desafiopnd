@@ -4,9 +4,9 @@ Projeto de desafio da empresa PNDVend. Chat com bot utilizando ReactJS como fram
 
 ## Criação do projeto
 
-O projeto foi criado utilizando o npm package Create-React-App, ferramente oferecida pelo próprio site do framework, que já gera o bundle do JavaScript.
+O projeto foi criado utilizando o npm package Create-React-App, ferramente oferecida no próprio site do framework, que já gera o bundle do JavaScript.
 
-Projetos criados pelo Create-React-App possuem um Read.me default, que aqui está comentado como 'README_CRA.md'. Alguns pontos explicados lá são importantes a serem passados aqui. Os arquivos index.js e index.html devem permanecer nos respectivos locais da estrutura criada pelo pacote.
+Projetos criados pelo Create-React-App possuem um Read.me default, que aqui foi renomeado como 'README_CRA.md'. Alguns pontos explicados lá são importantes a serem passados aqui. Os arquivos index.js e index.html devem permanecer nos respectivos locais da estrutura criada pelo pacote.
 
 A estrutura é similar à :
 
@@ -29,7 +29,7 @@ my-app/
 
 ## Como rodar a aplicação
 
-Algumas ações do npm estão configuradas no package.json. Uma delas é 'npm start', que chama um comanda, que entre suas funções, está subir o servidor na porta local 3000. Portanto , basta utilizar:
+Algumas ações do npm estão configuradas no package.json. Uma delas é 'npm start', que chama um react-script, que entre suas funções, está a de subir um servidor HTTP na porta 3000. Portanto , basta utilizar:
 
 * 'npm start'
 
@@ -43,7 +43,7 @@ Para testar , utilize o comando :
 
 * 'npm test'
 
-No package.json, o script 'test' foi configurado para chamar o mocha, e assim rodar o script de teste, que testa a integridade dos objetos utilizados no app.
+No package.json, o script 'test' foi configurado para chamar o mocha, e assim rodar o script de teste, que testa a integridade dos objetos utilizados no app. a utilização do mocha foi feita junto com o Chai.
 
 ## Itens da avaliação
 
@@ -61,10 +61,10 @@ Será analizado:
 Bônus (opcional):
 
 * Animações via CSS Transitions;<br />
-  &nbsp;&nbsp;&nbsp;&nbsp;|- Utilizei apenas uma, no :hover dos balões do chat.
+  &nbsp;&nbsp;&nbsp;&nbsp;|- Utilizei no :hover dos balões do chat.(efeito de zoom ao passar o cursor sobre a conversa)
 * WebSockets;<br />
   &nbsp;&nbsp;&nbsp;&nbsp;|- Como mencionado, por utilizar Manuh, não utilizei WebSocket/MQTT.
 * Integração com alguma API externa;<br />
-  &nbsp;&nbsp;&nbsp;&nbsp;|- FALTA (Tentar implementar uma requisição à alguma API aberta pelo sábado)
+  &nbsp;&nbsp;&nbsp;&nbsp;|- Não achei uma api boa para integrar com o chat.
 * Testes Unitários (com Chai).<br />
   &nbsp;&nbsp;&nbsp;&nbsp;|- Feitos para testar integridade dos objetos utilizados.
