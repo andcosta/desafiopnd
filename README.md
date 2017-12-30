@@ -49,20 +49,20 @@ Como passado por e-mail, os pontos a serem avaliados estão nas categorias descr
 
 Será analizado:
 
-* As estruturas dos componentes (tamanho, nomes, funções, se está usando ES6, FP, etc)
-  |- Tentei seguir ao máximo. (utilizei nomes mnemônicos, ES6, FP no que deu, ...)
-* A organização dos dados (se será somente via state, ou algum Flux (bônus se for MobX ou Redux);
-  |- Organização dos dados utilizei state, passagem de funções via 'props'(e passando contexto), e para Flux utilizei uma bliblioteca chamada Manuh, que funciona à base de eventos em tópicos. Por ter um pattern parecido com o MQTT de publish e subscribe, acabei não utilizando WebSocket e/ou MQTT.
-* UI/UX;
-  |- Neste ponto, tentei deixar a interface clean utilizando o que foi pedido.
+* As estruturas dos componentes (tamanho, nomes, funções, se está usando ES6, FP, etc)<br />  
+  &nbsp;&nbsp;&nbsp;&nbsp;|- Tentei seguir ao máximo. (utilizei nomes mnemônicos, ES6, FP no que deu, ...)
+* A organização dos dados (se será somente via state, ou algum Flux (bônus se for MobX ou Redux);<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;|- Organização dos dados utilizei state, passagem de funções via 'props'(e passando contexto), e para Flux utilizei uma bliblioteca chamada Manuh, que funciona à base de eventos em tópicos. Por ter um pattern parecido com o MQTT de publish e subscribe, acabei não utilizando WebSocket e/ou MQTT.
+* UI/UX;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;|- Neste ponto, tentei deixar a interface clean utilizando o que foi pedido.
 
 Bônus (opcional):
 
-* Animações via CSS Transitions;
-  |- Utilizei apenas uma, no :hover dos balões do chat.
-* WebSockets;
-  |- Como mencionado, por utilizar Manuh, não utilizei WebSocket/MQTT.
-* Integração com alguma API externa;
-  |- FALTA (Tentar implementar uma requisição à alguma API aberta pelo sábado)
-* Testes Unitários (com Chai).
-  |- Feitos para testar integridade dos objetos utilizados.
+* Animações via CSS Transitions;<br />  
+  &nbsp;&nbsp;&nbsp;&nbsp;|- Utilizei apenas uma, no :hover dos balões do chat.
+* WebSockets;<br />  
+  &nbsp;&nbsp;&nbsp;&nbsp;|- Como mencionado, por utilizar Manuh, não utilizei WebSocket/MQTT.
+* Integração com alguma API externa;<br />  
+  &nbsp;&nbsp;&nbsp;&nbsp;|- FALTA (Tentar implementar uma requisição à alguma API aberta pelo sábado)
+* Testes Unitários (com Chai).<br />  
+  &nbsp;&nbsp;&nbsp;&nbsp;|- Feitos para testar integridade dos objetos utilizados.
