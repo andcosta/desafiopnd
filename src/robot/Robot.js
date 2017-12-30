@@ -12,7 +12,8 @@ class Robot extends Component {
       'Posso lhe responder mais tarde ?',
       'não tenho idéia do que está falando. ',
       'Poderia perguntar isso mais tarde ? ',
-      'Claro que posso lhe conceder permissão no sistema.'
+      'Claro que posso lhe conceder permissão no sistema.',
+      'A PND possui um excelente sistema, senhor '
     ];
   }
 

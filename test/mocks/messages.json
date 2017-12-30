@@ -1,0 +1,26 @@
+[
+  {
+    "human": {
+      "value": "Olá, gostaria de ajuda.",
+      "sender": "human",
+      "key": 1
+    },
+    "robot": {
+      "value": "Boa noite, em que posso ajudá-lo?",
+      "sender": "robot",
+      "key": 2
+    }
+  },
+  {
+    "human": {
+      "value": "Poderia fazer isso mais tarde?.",
+      "sender": "human",
+      "key": 3
+    },
+    "robot": {
+      "value": "Claro , em que horário ?",
+      "sender": "robot",
+      "key": 4
+    }
+  }
+]

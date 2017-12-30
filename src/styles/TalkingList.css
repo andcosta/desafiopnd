@@ -2,6 +2,14 @@
   margin: 0;
 }
 
+.time-out {
+  font-size: 10px;
+}
+
+.time-out:hover {
+  font-size: 10px;
+}
+
 .all-line {
   overflow: hidden;
   position: relative;
@@ -19,6 +27,17 @@
   color: white;
   background-color: #3d80a5;
   padding: 20px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.robot-msg:hover,
+.human-msg:hover {
+  width: 180%;
+  height: 180%;
+  font-size: 180%;
 }
 
 .robot-msg {
@@ -32,6 +51,10 @@
   color: black;
   background-color: #e8dfd1;
   padding: 20px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .all-parent-style {
