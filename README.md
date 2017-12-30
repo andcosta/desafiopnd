@@ -43,6 +43,8 @@ Para testar , utilize o comando :
 
 No package.json, o script 'test' foi configurado para chamar o mocha, e assim rodar o script de teste, que testa a integridade dos objetos utilizados no app.
 
+PS : Não esqueça de utilizar o comando npm install quando clonar o projeto para baixar as dependências do mesmo.
+
 ## Itens da avaliação
 
 Como passado por e-mail, os pontos a serem avaliados estão nas categorias descritas abaixo.
